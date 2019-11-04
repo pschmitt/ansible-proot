@@ -24,7 +24,7 @@ exec proot --link2symlink -0 -r ${PREFIX}/share/TermuxAlpine/ \
   -b /dev/ -b "$TMPDIR/dev-shm:/dev/shm" -b /sys/ -b /proc/ \
   -b "$TMPDIR/.ansible:/home/.ansible" \
   -b "$HOME/.ssh/id_ed25519_ansible:/home/.ssh/id_ed25519_ansible" \
-  -b "$HOME/.yadm/ansible-bootstrap:/ansible" \
+  -b "$PWD:/ansible" \
   -w /ansible \
   /usr/bin/env HOME=/home PREFIX=/usr SHELL=/bin/sh TERM="$TERM" LANG=$LANG PATH=/bin:/usr/bin:/sbin:/usr/sbin \
   /bin/sh -c "$@"
