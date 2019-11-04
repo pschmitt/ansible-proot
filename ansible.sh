@@ -2,4 +2,4 @@
 
 cd "$(dirname "$(realpath "$0")")" || exit 9
 
-./ansible-proot.sh "ansible -i inventory.yml host $*"
+./ansible-proot.sh "ansible $*"
