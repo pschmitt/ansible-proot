@@ -1,3 +1,6 @@
+# WARNING
+THIS REPOSITORY HAS MOVED HERE: https://github.com/pschmitt/termux.sh
+
 # Installation
 
 This repo holds a wrapper for ansible. It uses an alpine proot image with
